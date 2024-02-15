@@ -1,0 +1,67 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <EnableNETAnalyzers>true</EnableNETAnalyzers>
+        <AnalysisMode>AllEnabledByDefault</AnalysisMode>
+        <CodeAnalysisTreatWarningsAsErrors>false</CodeAnalysisTreatWarningsAsErrors>
+        <CodeAnalysisRuleSet>..\code-analysis.ruleset</CodeAnalysisRuleSet>
+        <GenerateDocumentationFile>false</GenerateDocumentationFile>
+        <NoWarn>CA1707,S1066,SA1407,SA1600,SA1303,SA1028,S2699,SA1005,SA1116,CS8604,SA1203,SA1117,CS8618</NoWarn>
+    </PropertyGroup>
+    <ItemGroup>
+        <AdditionalFiles Include="..\code-analysis.ruleset" Link="Properties\code-analisys.ruleset"/>
+        <AdditionalFiles Include="..\stylecop.json" Link="Properties\stylecop.json"/>
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="BenchmarkDotNet" Version="0.13.1"/>
+        <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.NET.Test.SDK" Version="17.0.0"/>
+        <PackageReference Include="NUnit" Version="3.13.2"/>
+        <PackageReference Include="NUnit3TestAdapter" Version="4.0.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0"/>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0"/>
+        <PackageReference Include="Moq" Version="4.18.1"/>
+        <PackageReference Include="NLog.Extensions.Logging" Version="1.7.4"/>
+        <PackageReference Include="NUnit" Version="3.13.2"/>
+        <PackageReference Include="NUnit3TestAdapter" Version="4.0.0"/>
+        <PackageReference Include="coverlet.collector" Version="3.1.0"/>
+        <PackageReference Include="XMLUnit.Core" Version="2.9.1"/>
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Conversion\Conversion.csproj" />
+        <ProjectReference Include="..\DataReceiving\DataReceiving.csproj" />
+        <ProjectReference Include="..\ExportDataService\ExportDataService.csproj" />
+        <ProjectReference Include="..\InMemoryReceiver\InMemoryReceiver.csproj" />
+        <ProjectReference Include="..\JsonSerializer.Serialization\JsonSerializer.Serialization.csproj" />
+        <ProjectReference Include="..\Serialization\Serialization.csproj" />
+        <ProjectReference Include="..\TextFileReceiver\TextFileReceiver.csproj" />
+        <ProjectReference Include="..\UriConversion\UriConversion.csproj" />
+        <ProjectReference Include="..\Validation\Validation.csproj" />
+        <ProjectReference Include="..\XDomWriter.Serialization\XDomWriter.Serialization.csproj" />
+        <ProjectReference Include="..\XmlDomWriter.Serialization\XmlDomWriter.Serialization.csproj" />
+        <ProjectReference Include="..\XmlSerializer.Serialization\XmlSerializer.Serialization.csproj" />
+        <ProjectReference Include="..\XmlWriter.Serialization\XmlWriter.Serialization.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Update="uri-addresses-result.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="uri-addresses.txt">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="uri-addresses-result.xml">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+</Project>

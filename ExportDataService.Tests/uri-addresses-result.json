@@ -1,0 +1,145 @@
+[
+  {
+    "scheme": "https",
+    "host": "habrahabr.ru",
+    "path": [
+      "company",
+      "it-grad",
+      "blog",
+      "341486"
+    ]
+  },
+  {
+    "scheme": "http",
+    "host": "www.example.com",
+    "path": [
+      "customers",
+      "12345"
+    ]
+  },
+  {
+    "scheme": "http",
+    "host": "www.example.com",
+    "path": [
+      "customers",
+      "12345",
+      "orders",
+      "98765"
+    ]
+  },
+  {
+    "scheme": "https",
+    "host": "qaevolution.ru",
+    "path": [
+      "znakomstvo-s-testirovaniem-api"
+    ]
+  },
+  {
+    "scheme": "https",
+    "host": "www.contoso.com",
+    "path": [
+      "Home",
+      "Index.htm"
+    ],
+    "query": [
+      {
+        "key": "q1",
+        "value": "v1"
+      },
+      {
+        "key": "q2",
+        "value": "v2"
+      }
+    ]
+  },
+  {
+    "scheme": "http",
+    "host": "aaa.com",
+    "path": [
+      "temp"
+    ],
+    "query": [
+      {
+        "key": "key",
+        "value": "Foo"
+      },
+      {
+        "key": "value",
+        "value": "Bar"
+      },
+      {
+        "key": "id",
+        "value": "42"
+      }
+    ]
+  },
+  {
+    "scheme": "https",
+    "host": "www.w3schools.com",
+    "path": [
+      "html",
+      "default.asp"
+    ]
+  },
+  {
+    "scheme": "http",
+    "host": "www.ninject.org",
+    "path": [
+      "learn.html"
+    ]
+  },
+  {
+    "scheme": "https",
+    "host": "docs.microsoft.com",
+    "path": [
+      "ru-ru",
+      "dotnet",
+      "csharp",
+      "programming-guide",
+      "concepts",
+      "linq",
+      "linq-to-xml-overview"
+    ]
+  },
+  {
+    "scheme": "https",
+    "host": "docs.microsoft.com",
+    "path": [
+      "ru-ru",
+      "dotnet",
+      "api",
+      "system.linq.queryable.where"
+    ],
+    "query": [
+      {
+        "key": "view",
+        "value": "netframework-4.8"
+      }
+    ]
+  },
+  {
+    "scheme": "https",
+    "host": "docs.microsoft.com",
+    "path": [
+      "en-us",
+      "dotnet",
+      "api",
+      "system.xml.serialization.xmlserializer"
+    ],
+    "query": [
+      {
+        "key": "view",
+        "value": "net-6.0"
+      }
+    ]
+  },
+  {
+    "scheme": "https",
+    "host": "metanit.com",
+    "path": [
+      "python",
+      "django",
+      "1.1.php"
+    ]
+  }
+]
